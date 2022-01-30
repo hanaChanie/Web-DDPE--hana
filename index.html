@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Life Hacks</title>
+<meta charset="UTF-8">
+<meta name="description" content="Power Of Self Education">
+<meta name="keywords" content="Life, Jack Ma,Eric Hoffer, Self Education">
+<meta name="author" content="Hana Chanie">
+</head>
+<body>
+<table width=100%>
+<tr>
+<td width="10%"></td>
+<td ><img src="logo_gold.png" alt="LOGO" height="70" ></td>
+<td align="right"><span>
+<a href="">Podcasts</a>|
+<a href="">Articles</a>|
+<a href="">Ideas</a>|
+<a href="../auth/signin.html">Sign in</a>|
+<a href="../auth/register.html">Register</a>|
+<a href="homepage.html">Job Application</a>
+
+
+
+</span></td>
+<td width="10%"></td>
+</tr>
+</table>
+<hr>
+<table width="100%">
+<tr>
+<td width="10%"></td>
+<td width="50%"></td>
+<td width="30%" align="right"> <a href="#24">Go to bottum</td>
+<td width="10%"></td>
+</tr>
+<tr>
+<td width="10%"></td>
+<td width="50%">
+<h1>Eric Hoffer and the Power of Self-Education</h1>
+
+<img src="life1.jpg" alt="Life pic" usemap="#image-map">
+
+<map name="image-map">
+    <area shape="circle" target="_blank" href="https://unsplash.com/s/photos/man" coords="971,216,47" >
+    <area shape="rect"  target="_blank" href="https://pixabay.com/images/search/nature/" coords="534,428,58,173" >
+    <area shape="poly" target="_blank" href="https://www.istockphoto.com/photos/messenger-bag" coords="  1029,357,1035,283,1077,261,1111,302,1118,353,1117,419,1112,477,1063,485,1041,460,1032,411" >
+</map>
+<div id="p">
+<p>I recently read The True Believer by Eric Hoffer. It’s a book about how mass movements evolve. With a lot
+of historical examples, the book explains the patterns and common threads among them. It’s an insightful
+book and reading it was a great learning experience for me.<br><br> <img src=" " alt="The True Beleiver book cover" align="left">What I’d like to share with you here is not the content of the book, though. Instead, I’d
+like to share with you about the author.</p>
+<p id="new">You see, I didn’t know about Eric Hoffer before. But I imagined he must be a famous
+professor from a well-known university. I mean, what else could explain the depth of his
+insights? The True Believer is an influential book. Here is how <a href=" ">Wikipedia </a>put it... <a href=" ">read more</a></p>
+<hr>
+</div>
+<h3>New Podcast</h3>
+<div id="audioo">
+<h1>Jack Ma - How I Overcame Failure</h1>
+<audio controls="controls" id= "audio" onplay="alert('audio played ')" onpause="alert('audio paused')" src="Jack Ma - How I Overcame Failure.mp3" >Your browser can't play this audio</audio>
+</div>
+<hr align="left">
+<h3>Pick of The Week</h3>
+<h1 id="24">24 Hours A Day</h1>
+<video controls="controls" src="24_HOURS.mp4" height="700" id="video">Your browser can't play this video </video><br><br><br>
+<button onclick="swapDom()" >Swap</button>
+<button onclick="removeDom()">Remove</button>
+<button onclick="addDom()">Add</button>
+<br><br>
+<script>
+ 
+ function swapDom(){
+ const x = document.querySelector("#audio");
+        y=document.createElement('label');
+        y.innerHTML = '<video src="24_HOURS.mp4" controls muted height="700">';
+        x.parentNode.replaceChild(y,x);
+ const a = document.querySelector("#video");
+        b=document.createElement('label');
+        b.innerHTML = '<audio src="Jack Ma - How I Overcame Failure.mp3">';
+        a.parentNode.replaceChild(b,a);
+
+ }
+
+ function removeDom(){
+var remove = document.getElementById("audio");
+        remove.remove();
+
+
+
+ }
+
+ function addDom(){
+var x=document.createElement("p");
+var y=document.createTextNode("This Website is great!!");
+x.appendChild(y);
+ 
+var parent=documentgetElementById('p');
+var before=document.getElementById('new');
+parent.insertBefore(x,before);
+
+
+ }
+
+</script>
+</td>
+<td width="30%" valign="top">
+<h3>Recent Posts</h3>
+<ul><li><b>Articles</b></li>
+<ul>
+<li>The Importance of Goals,
+Especially During Difficult
+Times</li>
+<li>5 Steps to Discovering Your
+Life Purpose In 2022!</li>
+</ul>
+</ul>
+<ul><li><b>Ideas</b></li>
+<ul>
+<li>10 Books to Read in The Fall</li>
+<li>Top Web Development Projects
+Ideas</li>
+</ul>
+</ul>
+<h2>Most Veiwed Articles</h2>
+<ol type="I">
+<li>Instant Gratification Is Stopping You
+From Reaching Your Goals!</li>
+<li>Stop Juggling Between Work And Life</li>
+</ol>
+<h2>IP Project Winners</h2>
+<pre>
+----------------------------------
+Rank     Award
+----------------------------------
+First    Free hosting and support
+Second   5GB Mobile Data
+Third    1GB Mobile Data
+----------------------------------
+</pre>
+</td>
+<td width="10%"></td>
+<tr>
+<td width="10%"></td>
+<td width="50%" colspan="2"><hr></td>
+<td width="30%"></td>
+<td width="10%"></td>
+
+</tr>
+<tr>
+<td width="10%"></td>
+<td width="50%"><p>Follow us on:<a href=" ">Facebook<a>|<a href=" ">Twitter</a></p></td>
+<td width="30%"align="right"><a href=" ">Privacy<a>|<a href=" ">Terms of use</td>
+<td width="10%"></td>
+
+</tr>
+<tr>
+<td width="10%"></td>
+<td width="50%" colspan="2" align="center">Copyright &copy;AASTU SEng 2021, All Rights Reserved</td>
+<td width="30%"></td>
+<td width="10%"></td>
+</tr>
+
+</table>
+</body>
+</html>
+
